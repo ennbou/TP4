@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_l_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="LastName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/txt_f_name"
+        app:layout_constraintTop_toTopOf="@id/txt_f_name" />
+
+    <TextView
+        android:id="@+id/txt_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/txt_f_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_f_name" />
+
+    <TextView
+        android:id="@+id/txt_n_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0712344565"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/txt_f_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_job" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@email.com"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/txt_f_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_n_phone" />
+
+    <ImageButton
+        android:id="@+id/btn_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
